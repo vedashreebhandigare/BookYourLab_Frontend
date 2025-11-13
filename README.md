@@ -8,7 +8,7 @@ A modern, fully responsive medical laboratory services website featuring health 
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
 **Deployed on Netlify:** [View Live Website](https://your-site-name.netlify.app)
 
@@ -16,7 +16,7 @@ A modern, fully responsive medical laboratory services website featuring health 
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 BookYourLab is a professional, user-friendly website designed for medical laboratory services. It provides a seamless experience for users to explore health packages, book diagnostic tests, and access medical information. The website features a modern design with smooth animations, intuitive navigation, and complete mobile responsiveness.
 
@@ -45,24 +45,24 @@ BookYourLab is a professional, user-friendly website designed for medical labora
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 ### Design & UX
-- ✅ **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile devices
-- ✅ **Modern UI/UX** - Clean, professional design with smooth animations
-- ✅ **Fast Loading** - Optimized performance with CDN resources
-- ✅ **Cross-Browser Compatible** - Tested on Chrome, Firefox, Safari, Edge
+-  **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile devices
+-  **Modern UI/UX** - Clean, professional design with smooth animations
+-  **Fast Loading** - Optimized performance with CDN resources
+-  **Cross-Browser Compatible** - Tested on Chrome, Firefox, Safari, Edge
 
 ### Functional Features
-- 🔍 **Smart Search Bar** - Search functionality with voice input option
-- 📦 **Health Packages** - Display of popular health check packages with pricing
-- 🏥 **Test Categories** - Organized by type (Microbiology, Histopathology, Hemoglobin)
-- 🩺 **Risk-Based Tests** - Browse tests by health risks (Diabetes, Heart, Thyroid)
-- 👤 **Body Diagram Selector** - Interactive organ selection for targeted tests
-- 📊 **Animated Statistics** - Counter animations showing key metrics (500+ tubes, 1000+ tests)
-- 📧 **Newsletter Subscription** - Email collection for marketing
-- 💬 **WhatsApp Integration** - Floating button for instant customer support
-- 🌐 **Social Media Links** - Facebook, Twitter, YouTube integration
+-  **Smart Search Bar** - Search functionality with voice input option
+-  **Health Packages** - Display of popular health check packages with pricing
+-  **Test Categories** - Organized by type (Microbiology, Histopathology, Hemoglobin)
+-  **Risk-Based Tests** - Browse tests by health risks (Diabetes, Heart, Thyroid)
+-  **Body Diagram Selector** - Interactive organ selection for targeted tests
+-  **Animated Statistics** - Counter animations showing key metrics (500+ tubes, 1000+ tests)
+-  **Newsletter Subscription** - Email collection for marketing
+-  **WhatsApp Integration** - Floating button for instant customer support
+-  **Social Media Links** - Facebook, Twitter, YouTube integration
 
 ### Sections Implemented
 1. **Hero Section** - Eye-catching banner with call-to-action
@@ -80,7 +80,7 @@ BookYourLab is a professional, user-friendly website designed for medical labora
 
 ---
 
-## 🎨 Design Specifications
+##  Design Specifications
 
 ### Color Palette
 ```css
@@ -102,7 +102,7 @@ BookYourLab is a professional, user-friendly website designed for medical labora
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 bookyourlab_vedashree/
@@ -123,7 +123,7 @@ bookyourlab_vedashree/
 
 ---
 
-## 🚀 Performance Metrics
+##  Performance Metrics
 
 - **Load Time:** < 2 seconds
 - **First Contentful Paint:** < 1.5 seconds
@@ -132,16 +132,16 @@ bookyourlab_vedashree/
 
 ---
 
-## 📱 Browser Compatibility
+##  Browser Compatibility
 
 | Browser | Version | Status |
 |---------|---------|--------|
-| Chrome | Latest | ✅ Fully Supported |
-| Firefox | Latest | ✅ Fully Supported |
-| Safari | Latest | ✅ Fully Supported |
-| Edge | Latest | ✅ Fully Supported |
-| Mobile Safari | iOS 12+ | ✅ Fully Supported |
-| Chrome Mobile | Latest | ✅ Fully Supported |
+| Chrome | Latest |  Fully Supported |
+| Firefox | Latest |  Fully Supported |
+| Safari | Latest |  Fully Supported |
+| Edge | Latest |  Fully Supported |
+| Mobile Safari | iOS 12+ |  Fully Supported |
+| Chrome Mobile | Latest |  Fully Supported |
 
 ---
 
@@ -177,48 +177,31 @@ http://localhost:8000/bookyourlab_updated.html
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
-### Deploy to Netlify (Recommended)
 
-1. **Quick Deploy (Drag & Drop):**
-   - Go to https://app.netlify.com/drop
-   - Drag the project folder
-   - Get instant deployment
 
-2. **Deploy from GitHub:**
-   - Push code to GitHub
-   - Connect repository to Netlify
-   - Automatic deployments on git push
-
-### Deploy to Other Platforms
-- **Vercel:** Import GitHub repository
-- **GitHub Pages:** Enable in repository settings
-- **Firebase Hosting:** Use Firebase CLI
-
----
-
-## 🎯 Key Highlights for Recruiters
+##  Key Highlights for Recruiters
 
 ### Technical Skills Demonstrated
-✅ **Clean Code** - Well-structured, readable, and maintainable  
-✅ **Responsive Design** - Mobile-first approach  
-✅ **Modern CSS** - Flexbox, Grid, Custom Properties, Animations  
-✅ **JavaScript** - ES6+, DOM Manipulation, Event Handling, Animations  
-✅ **Performance Optimization** - CDN usage, efficient selectors  
-✅ **Cross-Browser Testing** - Ensured compatibility  
-✅ **Version Control** - Git best practices  
-✅ **Deployment** - CI/CD pipeline setup  
+ **Clean Code** - Well-structured, readable, and maintainable  
+ **Responsive Design** - Mobile-first approach  
+ **Modern CSS** - Flexbox, Grid, Custom Properties, Animations  
+ **JavaScript** - ES6+, DOM Manipulation, Event Handling, Animations  
+ **Performance Optimization** - CDN usage, efficient selectors  
+ **Cross-Browser Testing** - Ensured compatibility  
+ **Version Control** - Git best practices  
+ **Deployment** - CI/CD pipeline setup  
 
 ### Soft Skills Demonstrated
-✅ **Attention to Detail** - Pixel-perfect implementation  
-✅ **Problem Solving** - Handled complex layouts and animations  
-✅ **User-Centric Design** - Focus on UX/UI best practices  
-✅ **Time Management** - Delivered complete, polished product  
+ **Attention to Detail** - Pixel-perfect implementation  
+ **Problem Solving** - Handled complex layouts and animations  
+ **User-Centric Design** - Focus on UX/UI best practices  
+ **Time Management** - Delivered complete, polished product  
 
 ---
 
-## 📊 Code Quality
+##  Code Quality
 
 - **No Console Errors** - Clean, error-free code
 - **Semantic HTML** - Proper use of HTML5 elements
@@ -229,17 +212,17 @@ http://localhost:8000/bookyourlab_updated.html
 
 ---
 
-## 🔒 Security Features
+##  Security Features
 
-- ✅ HTTPS enabled (via Netlify)
-- ✅ XSS protection headers
-- ✅ Content security policy
-- ✅ No sensitive data exposure
-- ✅ Secure external resources (CDN with integrity)
+-  HTTPS enabled (via Netlify)
+-  XSS protection headers
+-  Content security policy
+-  No sensitive data exposure
+-  Secure external resources (CDN with integrity)
 
 ---
 
-## 📈 Future Enhancements
+##  Future Enhancements
 
 - [ ] Backend API integration for booking system
 - [ ] User authentication and dashboard
@@ -252,34 +235,17 @@ http://localhost:8000/bookyourlab_updated.html
 
 ---
 
-## 📞 Contact Information
+##  Contact Information
 
 **Developer:** Vedashree  
-**Email:** your.email@example.com  
-**LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)  
-**GitHub:** [Your GitHub Profile](https://github.com/yourusername)  
-**Portfolio:** [Your Portfolio Website](https://yourportfolio.com)
+**Email:** bhandigarevedashree@gmail.com  
+**LinkedIn:** https://www.linkedin.com/in/vedashree-bhandigare/    
+**Portfolio:** https://sl1nk.com/VedashreeBhandigare-Portfolio
 
 ---
 
-## 📄 License
 
-This project is created for educational and portfolio purposes.
-
-© 2025 BookYourLab. All rights reserved.
-
----
-
-## 🙏 Acknowledgments
-
-- **Bootstrap Team** - For the responsive framework
-- **Font Awesome** - For the comprehensive icon library
-- **Google Fonts** - For the beautiful Poppins typeface
-- **Netlify** - For seamless deployment and hosting
-
----
-
-## 💼 About This Project
+##  About This Project
 
 This project was developed as a demonstration of frontend development skills, showcasing proficiency in:
 - Modern HTML5/CSS3/JavaScript
