@@ -251,6 +251,8 @@
         .packages-section {
             padding: 5rem 0;
             background: var(--light-gray);
+            position: relative;
+            z-index: 1;
         }
 
         .packages-carousel {
@@ -495,27 +497,17 @@
         /* Features Section */
         .features-section {
             padding: 5rem 0;
-            background: var(--light-gray);
-        }
-
-        .features-layout {
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .feature-cards-left {
-            flex: 0 0 400px;
+            background: white;
         }
 
         .feature-card {
             background: white;
             border-radius: 20px 8px 20px 8px;
-            padding: 2rem;
+            padding: 2rem 1.5rem;
             text-align: center;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: all 0.4s ease;
-            margin-bottom: 1.5rem;
+            height: 100%;
         }
 
         .feature-card:hover {
@@ -524,47 +516,39 @@
         }
 
         .feature-icon {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             margin: 0 auto 1rem;
             background: linear-gradient(135deg, var(--primary-teal), var(--accent-green));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: white;
         }
 
         .feature-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
             color: var(--text-dark);
             margin-bottom: 0.5rem;
         }
 
         .feature-description {
-            color: #666;
+            color: #999;
             line-height: 1.6;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .feature-content-right {
-            flex: 1;
+            padding-left: 2rem;
         }
 
-        .feature-content-right h3 {
-            color: var(--text-dark);
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .feature-content-right h2 {
-            color: var(--primary-teal);
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
+        .feature-content-right .section-subtitle {
+            text-align: left;
+            color: #666;
+            margin-bottom: 0.5rem;
         }
 
         .feature-list {
@@ -578,6 +562,7 @@
             margin-bottom: 0.8rem;
             padding-left: 1.5rem;
             position: relative;
+            line-height: 1.6;
         }
 
         .feature-list li:before {
@@ -585,6 +570,7 @@
             color: var(--accent-green);
             position: absolute;
             left: 0;
+            font-size: 1.2rem;
         }
 
         /* Tests Section */
@@ -875,9 +861,11 @@
 
         /* CTA Section */
         .cta-section {
-            padding: 4rem 0;
+            padding: 5rem 0;
             background: linear-gradient(135deg, var(--accent-green), var(--primary-teal));
             text-align: center;
+            position: relative;
+            margin-top: 3rem;
         }
 
         .cta-section h2 {
@@ -901,6 +889,8 @@
             font-weight: 600;
             border: none;
             transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
         }
 
         .btn-book-now:hover {
@@ -909,21 +899,27 @@
         }
 
         /* Newsletter Section */
+        .newsletter-wrapper {
+            padding: 4rem 0;
+            background: white;
+            position: relative;
+        }
+
         .newsletter-section {
             background: var(--accent-green);
             padding: 3rem;
-            border-radius: 20px;
-            margin: -80px auto 0;
+            border-radius: 30px 8px 30px 8px;
             max-width: 1200px;
+            margin: 0 auto;
             position: relative;
             z-index: 10;
         }
 
         .newsletter-section h3 {
             color: white;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 600;
-            margin-bottom: 0;
+            margin: 0;
         }
 
         .newsletter-form {
@@ -953,6 +949,40 @@
             background: var(--secondary-teal);
         }
 
+        /* Trust Features Section */
+        .trust-features-section {
+            background: var(--light-gray);
+            padding: 5rem 0;
+            margin-top: 3rem;
+        }
+
+        .trust-feature-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .trust-icon {
+            margin: 0 auto 1.5rem;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .trust-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .trust-description {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
         /* Footer */
         footer {
             background: var(--primary-teal);
@@ -970,6 +1000,38 @@
             color: rgba(255,255,255,0.8);
             line-height: 1.8;
             margin-bottom: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent-green);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: white;
+            color: var(--primary-teal);
+            transform: translateY(-3px);
+        }
+
+        .copyright-text {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
         }
 
         .footer-title {
@@ -1156,7 +1218,7 @@
                     <a href="#packages" class="btn-check-out">Check Out Now</a>
                 </div>
                 <div class="col-lg-6 hero-image">
-                    <img src="https://via.placeholder.com/700x500/FFFFFF/1C7C98?text=PET+CT+Scanner" alt="PET CT Scanner">
+                    <img src="PET_CT_Scanner.png" alt="PET CT Scanner" onerror="this.src='https://via.placeholder.com/700x500/FFFFFF/1C7C98?text=PET+CT+Scanner'">
                 </div>
             </div>
         </div>
@@ -1251,7 +1313,7 @@
                 <div class="col-lg-5">
                     <div class="body-diagram-container">
                         <div class="body-diagram">
-                            <img src="https://via.placeholder.com/300x500/E8F4F8/1C7C98?text=Body+Diagram" alt="Body Diagram" style="max-width: 100%; height: auto;">
+                            <img src="body.png" alt="Body Diagram" style="max-width: 100%; height: auto;" onerror="this.src='https://via.placeholder.com/300x500/E8F4F8/1C7C98?text=Body+Diagram'">
                         </div>
                     </div>
                 </div>
@@ -1308,53 +1370,61 @@
     <!-- Features Section -->
     <section class="features-section">
         <div class="container">
-            <div class="section-header">
-                <p class="section-subtitle">Why Choose Us</p>
-                <h2 class="section-title">We'll Ensure You Always Get The Best Results</h2>
-            </div>
-            <div class="features-layout">
-                <div class="feature-cards-left">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-flask"></i>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <h3 class="feature-title">600+ Different Tests</h3>
+                                <p class="feature-description">Experienced Professionals</p>
+                            </div>
                         </div>
-                        <h3 class="feature-title">600+ Different Tests</h3>
-                        <p class="feature-description">Experienced Professionals</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-microscope"></i>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <h3 class="feature-title">High-End Technology</h3>
+                                <p class="feature-description">State-Of-The-Art Technology</p>
+                            </div>
                         </div>
-                        <h3 class="feature-title">High-End Technology</h3>
-                        <p class="feature-description">State-Of-The-Art Technology</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-truck"></i>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <h3 class="feature-title">Free Home Sampling</h3>
+                                <p class="feature-description">Sampling At Your Address</p>
+                            </div>
                         </div>
-                        <h3 class="feature-title">Free Home Sampling</h3>
-                        <p class="feature-description">Sampling At Your Address</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-user-nurse"></i>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-user-nurse"></i>
+                                </div>
+                                <h3 class="feature-title">Patient Support</h3>
+                                <p class="feature-description">Advice And Recommendations</p>
+                            </div>
                         </div>
-                        <h3 class="feature-title">Patient Support</h3>
-                        <p class="feature-description">Advice And Recommendations</p>
                     </div>
                 </div>
-                <div class="feature-content-right">
-                    <h3>Why Choose Us</h3>
-                    <h2>We'll Ensure You Always Get The Best Results</h2>
-                    <p>Your full-service lab for clinical trials. Our mission is to ensure the generation of accurate.</p>
-                    <p>Novalab is registered with the following governmental agencies:</p>
-                    <ul class="feature-list">
-                        <li>Drug Enforcement Agency (DEA) No. RG0105216</li>
-                        <li>Food and Drug Administration (FDA) No. 2182801</li>
-                        <li>International Standards Organization (ISO9001 and ISO17025)</li>
-                        <li>United States Department of Agriculture (USDA) No. 35-R-034</li>
-                    </ul>
-                    <button class="btn-check-out">View List</button>
+                <div class="col-lg-7">
+                    <div class="feature-content-right">
+                        <p class="section-subtitle">Why Choose Us</p>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">We'll Ensure You Always Get The Best Results</h2>
+                        <p style="margin-bottom: 1rem;">Your full-service lab for clinical trials. Our mission is to ensure the generation of accurate.</p>
+                        <p style="margin-bottom: 1.5rem; font-weight: 500;">Novalab is registered with the following governmental agencies:</p>
+                        <ul class="feature-list">
+                            <li>Drug Enforcement Agency (DEA) No. RG0105216</li>
+                            <li>Food and Drug Administration (FDA) No. 2182801</li>
+                            <li>International Standards Organization (ISO9001 and ISO17025)</li>
+                            <li>United States Department of Agriculture (USDA) No. 35-R-034</li>
+                        </ul>
+                        <button class="btn-check-out">View List</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1378,7 +1448,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="test-category-card">
                             <div class="test-category-image">
-                                <img src="https://via.placeholder.com/400x200/1C7C98/FFFFFF?text=Microbiology" alt="Microbiology Tests">
+                                <img src="Microbiology test.png" alt="Microbiology Tests" onerror="this.src='https://via.placeholder.com/400x200/1C7C98/FFFFFF?text=Microbiology'">
                             </div>
                             <div class="test-category-content">
                                 <h3 class="category-title">Microbiology Tests</h3>
@@ -1392,7 +1462,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="test-category-card">
                             <div class="test-category-image">
-                                <img src="https://via.placeholder.com/400x200/2B9CB5/FFFFFF?text=Histopatology" alt="Histopatology Tests">
+                                <img src="Histopathology test.png" alt="Histopatology Tests" onerror="this.src='https://via.placeholder.com/400x200/2B9CB5/FFFFFF?text=Histopatology'">
                             </div>
                             <div class="test-category-content">
                                 <h3 class="category-title">Histopatology Tests</h3>
@@ -1406,7 +1476,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="test-category-card">
                             <div class="test-category-image">
-                                <img src="https://via.placeholder.com/400x200/00E5A0/FFFFFF?text=Hemoglobin" alt="Hemoglobin Tests">
+                                <img src="Hemoglobin tests.png" alt="Hemoglobin Tests" onerror="this.src='https://via.placeholder.com/400x200/00E5A0/FFFFFF?text=Hemoglobin'">
                             </div>
                             <div class="test-category-content">
                                 <h3 class="category-title">Hemoglobin Tests</h3>
@@ -1544,7 +1614,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="risk-card">
                         <div class="risk-image">
-                            <img src="https://via.placeholder.com/400x200/1C7C98/FFFFFF?text=Diabetes" alt="Diabetes">
+                            <img src="diabetes.png" alt="Diabetes" onerror="this.src='https://via.placeholder.com/400x200/1C7C98/FFFFFF?text=Diabetes'">
                         </div>
                         <div class="risk-content">
                             <h3 class="risk-title">Diabetes</h3>
@@ -1558,7 +1628,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="risk-card">
                         <div class="risk-image">
-                            <img src="https://via.placeholder.com/400x200/2B9CB5/FFFFFF?text=Heart" alt="Heart">
+                            <img src="Heart.png" alt="Heart" onerror="this.src='https://via.placeholder.com/400x200/2B9CB5/FFFFFF?text=Heart'">
                         </div>
                         <div class="risk-content">
                             <h3 class="risk-title">Heart</h3>
@@ -1572,7 +1642,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="risk-card">
                         <div class="risk-image">
-                            <img src="https://via.placeholder.com/400x200/00E5A0/FFFFFF?text=Thyroid" alt="Thyroid">
+                            <img src="Thyroid.png" alt="Thyroid" onerror="this.src='https://via.placeholder.com/400x200/00E5A0/FFFFFF?text=Thyroid'">
                         </div>
                         <div class="risk-content">
                             <h3 class="risk-title">Thyroid</h3>
@@ -1652,7 +1722,7 @@
                     <button class="btn-notify">Get notified</button>
                 </div>
                 <div class="col-lg-6 text-center">
-                    <img src="https://via.placeholder.com/400x600/FFFFFF/1C7C98?text=App+Preview" alt="Mobile App" class="phone-mockup">
+                    <img src="mobile_app.png" alt="Mobile App" class="phone-mockup" onerror="this.src='https://via.placeholder.com/400x600/FFFFFF/1C7C98?text=App+Preview'">
                 </div>
             </div>
         </div>
@@ -1668,16 +1738,64 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="container">
-        <div class="newsletter-section">
-            <div class="row align-items-center">
-                <div class="col-lg-4">
-                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+    <section class="newsletter-wrapper">
+        <div class="container">
+            <div class="newsletter-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Enter Your Email Id">
+                            <button class="btn-subscribe">Subscribe</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Enter Your Email Id">
-                        <button class="btn-subscribe">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Features Section -->
+    <section class="trust-features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="trust-feature-item">
+                        <div class="trust-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 10L15 25V40C15 54.5 25.5 67.5 40 70C54.5 67.5 65 54.5 65 40V25L40 10Z" stroke="#1C7C98" stroke-width="3" fill="none"/>
+                                <path d="M30 40L36 46L50 32" stroke="#00E5A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h4 class="trust-title">Reliable</h4>
+                        <p class="trust-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="trust-feature-item">
+                        <div class="trust-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 10L15 25V40C15 54.5 25.5 67.5 40 70C54.5 67.5 65 54.5 65 40V25L40 10Z" stroke="#1C7C98" stroke-width="3" fill="none"/>
+                                <rect x="32" y="35" width="16" height="20" rx="2" stroke="#00E5A0" stroke-width="2" fill="none"/>
+                                <path d="M35 35V30C35 27 37 25 40 25C43 25 45 27 45 30V35" stroke="#00E5A0" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h4 class="trust-title">Secure</h4>
+                        <p class="trust-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="trust-feature-item">
+                        <div class="trust-icon">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="25" stroke="#1C7C98" stroke-width="3" fill="none"/>
+                                <path d="M40 25V40L50 45" stroke="#00E5A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <text x="48" y="35" font-size="20" fill="#1C7C98" font-weight="bold">$</text>
+                            </svg>
+                        </div>
+                        <h4 class="trust-title">Affordable</h4>
+                        <p class="trust-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                     </div>
                 </div>
             </div>
@@ -1691,6 +1809,11 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="footer-logo">Book<span style="color: var(--accent-green);">Your</span>Lab</div>
                     <p class="footer-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5 class="footer-title">Quick Links</h5>
@@ -1702,6 +1825,7 @@
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Statutory Compliance</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
@@ -1755,6 +1879,13 @@
                                 <li>Kolkata</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="copyright-text">
+                        © 2020 All Rights Reserved by Intern Tech Health Services Private Limited
                     </div>
                 </div>
             </div>
